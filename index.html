@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutreachConnect | Everyone Deserves a Path Forward</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">◉</div>
+        <div>
+          <h1>OutreachConnect</h1>
+          <p>Trauma-Informed Outreach Platform</p>
+        </div>
+      </div>
+      <nav class="header-links" aria-label="Public navigation">
+        <a href="#what">What We Do</a>
+        <a href="#impact">Impact</a>
+        <a href="#portal">Role Portals</a>
+      </nav>
+      <div class="topbar-actions">
+        <label class="sr-only" for="roleSelect">Choose role preview</label>
+        <select id="roleSelect"></select>
+        <button id="themeToggle" class="btn btn-outline" type="button">Toggle Theme</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Public Facing Experience</p>
+          <h2>Everyone Deserves a Path Forward</h2>
+          <p>
+            A consent-first support ecosystem connecting individuals, outreach teams, volunteers, and community
+            partners in one calm, mobile-first platform.
+          </p>
+          <div class="cta-row">
+            <button class="btn">Get Support</button>
+            <button class="btn btn-secondary">Volunteer</button>
+            <button class="btn btn-outline">Partner With Us</button>
+          </div>
+          <div class="trust-row">
+            <span>✓ Consent Verified</span>
+            <span>✓ Trauma-Informed Language</span>
+            <span>✓ Accessible Mobile Design</span>
+          </div>
+        </div>
+        <div class="stat-grid" id="publicStats"></div>
+      </section>
+
+      <section id="what" class="panel">
+        <h3>What We Do</h3>
+        <div class="flow-grid">
+          <article><h4>Outreach</h4><p>Warm intake with plain-language, low-friction forms and draft autosave.</p></article>
+          <article><h4>Assessment</h4><p>Dynamic follow-up questions and weighted wellness/needs scoring.</p></article>
+          <article><h4>Connection</h4><p>Consent-checked referrals to housing, health, legal, and community services.</p></article>
+        </div>
+      </section>
+
+      <section id="impact" class="panel">
+        <h3>How We Succeed</h3>
+        <div class="cards" id="impactCards"></div>
+      </section>
+
+      <section class="panel role-cta-grid">
+        <article>
+          <h4>Need support right now?</h4>
+          <p>Start a trauma-informed intake in minutes and connect with your support team.</p>
+          <button class="btn">Start My Intake</button>
+        </article>
+        <article>
+          <h4>Want to make a difference?</h4>
+          <p>Apply as a volunteer, share your skills, and track your impact hours.</p>
+          <button class="btn btn-secondary">Volunteer Application</button>
+        </article>
+        <article>
+          <h4>Community organization?</h4>
+          <p>Join the provider network and respond to warm referrals in real time.</p>
+          <button class="btn btn-outline">Join as Partner</button>
+        </article>
+      </section>
+
+      <section id="portal" class="portal">
+        <div class="portal-head">
+          <div>
+            <p class="eyebrow">Role-Based Portal Preview</p>
+            <h3 id="portalTitle">Dashboard</h3>
+          </div>
+          <p id="portalSubtitle"></p>
+        </div>
+
+        <nav class="role-nav" id="roleNav"></nav>
+
+        <section class="quick-actions">
+          <h4>Quick Actions</h4>
+          <div id="quickActions" class="chip-row"></div>
+        </section>
+
+        <section class="dashboard" id="dashboardCards"></section>
+
+        <section class="panel">
+          <h4>Mobile Bottom Tabs (Role Context)</h4>
+          <div class="mobile-tabs" id="mobileTabs"></div>
+        </section>
+
+        <section class="panel">
+          <h4>Role Workflow</h4>
+          <ol id="workflowSteps" class="workflow-list"></ol>
+        </section>
+      </section>
+
+      <section class="panel">
+        <h3>Assessment & Scoring Engine</h3>
+        <p class="muted">Strength-based review view with weighted domains and triage interpretation.</p>
+        <div id="scoreCards" class="cards"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Consent Management Lifecycle</h3>
+        <div id="consentCards" class="cards"></div>
+      </section>
+
+      <section class="module-map panel">
+        <h3>Complete Module Coverage</h3>
+        <div id="moduleCards" class="cards"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Crisis Line:</strong> 1-800-000-HELP • 24/7
+      </div>
+      <small>Privacy-first. Consent-verified. Built for mobile-first field work.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
